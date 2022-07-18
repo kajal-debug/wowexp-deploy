@@ -1,0 +1,20 @@
+{
+  "name": "wowmeet",
+  "version": "0.0.1",
+  "description": "multi-player socket.io app",
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client/user && npm run build --prefix client/user"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.15.2",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.4",
+    "nodemailer": "^6.7.7",
+    "socket.io": "^2.2.0"
+  }
+}
